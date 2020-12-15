@@ -3,12 +3,241 @@
   padding: 0;
 }
 body {
+  font-family: "Segoe UI", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #353b48;
-  color: rgb(255, 242, 219);
+  background-color: #d1d8e0;
+  margin-left: 2rem;
+}
+i {
+  color: #575757;
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+  color: #4b7bec;
+  font-weight: 600;
+}
+a:hover {
+  text-decoration: underline;
+}
+.bold {
+  font-weight: bold;
+}
+sup {
+  font-size: 0.9rem;
+}
+/* Header */
+header {
+  margin-top: 5rem;
+}
+.header-content {
+  margin-bottom: 1rem;
+}
+.header-content h2 {
+  font-weight: 500;
+}
+header h5 {
+  text-transform: uppercase;
+}
+header h4 {
+  color: #4b7bec;
+}
+header h1 {
+  font-size: 3rem;
+}
+.author {
+  width: 70%;
+}
+/* Quick facts */
+.whole {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+.quick-facts {
+  border: 1px solid rgb(95, 95, 95);
+  padding: 0.6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+/* Photo */
+.photo {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  border: 1px solid rgb(177, 177, 177);
+  padding: 1rem;
 }
 img {
-  width: 17%;
+  width: 12rem;
   height: auto;
+}
+.some-message {
+  text-transform: uppercase;
+}
+.quick-facts h3 {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+}
+.viewMedia {
+  display: flex;
+  justify-content: center;
+}
+.viewMedia-div {
+  margin-top: 0.5rem;
+}
+.quick-facts h5 {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.square-div {
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+.fact-color {
+  background-color: rgb(221, 221, 221);
+}
+
+.inside-square-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 10rem;
+}
+.inside-born {
+  width: 6.5rem;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.column div {
+  margin: 0.1rem 0;
+}
+.Did-you-know {
+  border: 1px solid black;
+  width: 13rem;
+}
+.bullet-div {
+  padding-left: 1rem;
+}
+/* Text Description */
+.text-description {
+  margin-left: 20rem;
+  margin-top: 2rem;
+  position: absolute;
+}
+.text-content {
+  font-size: 1.2rem;
+  width: 84%;
+}
+.text-content div {
+  margin: 1.5rem 0;
+  line-height: 2rem;
+  word-spacing: 0.2rem;
+}
+.blue {
+  background-color: #4b6584;
+  width: 18.2rem;
+  height: 0.6rem;
+}
+/* Top Questions */
+.top-questions-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4rem 0;
+}
+.top-questions {
+  width: 50%;
+  border: 1px solid rgb(177, 177, 177);
+}
+.top-questions h2 {
+  color: rgb(94, 94, 94);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.top-questions .blue {
+  background-color: #4b6584;
+  width: 100%;
+  height: 0.6rem;
+}
+.top-questions-content {
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+.question-list {
+  margin-top: 0.5rem;
+}
+.question {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgb(221, 221, 221);
+  transition: 0.05s;
+}
+.question:hover {
+  cursor: pointer;
+  background-color: rgb(202, 202, 202);
+}
+.question p {
+  color: #0040d6;
+}
+.fa-mouse {
+  float: right;
+  color: rgb(107, 107, 107);
+}
+.answer {
+  display: none;
+  margin: 1rem;
+  padding: 1rem;
+}
+.answered {
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+.readMore {
+  font-size: 16px;
+  padding: 0.5rem;
+}
+/* Childhood and Education */
+.childhood-video {
+  margin: 2rem 0;
+}
+video {
+  width: 75%;
+}
+.video-message {
+  text-align: center;
+  width: 75%;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+.video-message div {
+  margin-top: 0.5rem;
+}
+.kid-albert {
+  width: 75%;
+  margin: 2rem 0;
+}
+.albert-img {
+  width: 30%;
+  margin: 0 auto;
+}
+.albert-img img {
+  width: 100%;
+}
+.text-img {
+  text-align: center;
+}
+.text-img i {
+  color: #252525;
+}
+.text-img i::before {
+  content: "";
+  border: 2px solid#a5b1c2;
+  height: 1rem;
+  margin-right: 2rem;
 }
