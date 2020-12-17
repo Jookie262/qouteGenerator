@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #d1d8e0;
-  margin-left: 2rem;
+  margin-right: 2rem;
 }
 i {
   color: #575757;
@@ -27,10 +27,43 @@ a:hover {
 sup {
   font-size: 0.9rem;
 }
-/* Header */
-header {
+.all-container {
+  margin-left: 14rem;
+}
+.overall {
   margin-top: 5rem;
 }
+/* Navbar */
+#navbar {
+  border-top: 5px solid rgb(95, 95, 95);
+  border-right: 5px solid rgb(95, 95, 95);
+  width: 13rem;
+  position: fixed;
+}
+.links {
+  top: 5rem;
+  left: 0;
+  overflow: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+#navbar a {
+  padding: 1rem 0 1rem 1rem;
+  text-decoration: none;
+}
+#navbar a:hover {
+  background-color: rgb(194, 194, 194);
+}
+#navbar h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+#navbar header {
+  border-bottom: 2px solid rgb(95, 95, 95);
+  padding: 0.5rem;
+}
+/* Header */
 .header-content {
   margin-bottom: 1rem;
 }
@@ -52,7 +85,9 @@ header h1 {
 /* Quick facts */
 .whole {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 3rem;
 }
 .quick-facts {
@@ -99,7 +134,6 @@ img {
 .fact-color {
   background-color: rgb(221, 221, 221);
 }
-
 .inside-square-div {
   display: flex;
   flex-direction: row;
@@ -125,13 +159,15 @@ img {
 }
 /* Text Description */
 .text-description {
-  margin-left: 20rem;
-  margin-top: 2rem;
-  position: absolute;
+  width: 70%;
+  margin-right: 20rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .text-content {
   font-size: 1.2rem;
-  width: 84%;
 }
 .text-content div {
   margin: 1.5rem 0;
@@ -140,9 +176,9 @@ img {
 }
 .blue {
   background-color: #4b6584;
-  width: 18.2rem;
   height: 0.6rem;
 }
+
 /* Top Questions */
 .top-questions-container {
   display: flex;
@@ -151,7 +187,7 @@ img {
   margin: 4rem 0;
 }
 .top-questions {
-  width: 50%;
+  width: 55%;
   border: 1px solid rgb(177, 177, 177);
 }
 .top-questions h2 {
@@ -173,19 +209,30 @@ img {
 }
 .question {
   margin: 1rem;
-  padding: 1rem;
+  padding: 0rem 1rem;
   background-color: rgb(221, 221, 221);
-  transition: 0.05s;
 }
 .question:hover {
   cursor: pointer;
   background-color: rgb(202, 202, 202);
 }
+.question-background {
+  background-color: rgb(221, 221, 221);
+}
+.quest-hover {
+  cursor: pointer;
+  background-color: rgb(202, 202, 202);
+  transition: 0.1s;
+}
 .question p {
   color: #0040d6;
+  height: 3rem;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 .fa-mouse {
-  float: right;
   color: rgb(107, 107, 107);
 }
 .answer {
@@ -202,15 +249,19 @@ img {
   padding: 0.5rem;
 }
 /* Childhood and Education */
+.top-control {
+  margin-top: 7rem;
+}
 .childhood-video {
   margin: 2rem 0;
 }
 video {
-  width: 75%;
+  border: 0.1px solid black;
+  width: 65%;
 }
 .video-message {
   text-align: center;
-  width: 75%;
+  width: 65%;
   margin-top: 0.5rem;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
@@ -219,15 +270,15 @@ video {
   margin-top: 0.5rem;
 }
 .kid-albert {
-  width: 75%;
+  width: 65%;
   margin: 2rem 0;
 }
 .albert-img {
-  width: 30%;
-  margin: 0 auto;
+  text-align: center;
 }
 .albert-img img {
-  width: 100%;
+  width: 30%;
+  margin-bottom: 2.5rem;
 }
 .text-img {
   text-align: center;
@@ -240,4 +291,19 @@ video {
   border: 2px solid#a5b1c2;
   height: 1rem;
   margin-right: 2rem;
+}
+.published-paper {
+  font-size: 0.9rem;
+  padding: 0rem 3rem;
+}
+.published-paper p {
+  margin: 0.5rem 0;
+  word-spacing: 0.1rem;
+  line-height: 1.4rem;
+}
+.hilbert::before {
+  content: "";
+  border: 2px solid#a5b1c2;
+  height: 10rem;
+  margin-right: 1rem;
 }

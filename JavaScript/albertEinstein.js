@@ -46,9 +46,11 @@ document.getElementById("question3").addEventListener("click", () => {
   number = 3;
   if (state3 === "t") {
     changeClick(number);
+
     state3 = "y";
   } else {
     backClick(number);
+
     state3 = "t";
   }
 });
