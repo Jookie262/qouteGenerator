@@ -178,13 +178,12 @@ img {
   background-color: #4b6584;
   height: 0.6rem;
 }
-
 /* Top Questions */
 .top-questions-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 4rem 0;
+  margin: 3rem 0;
 }
 .top-questions {
   width: 55%;
@@ -249,19 +248,26 @@ img {
   padding: 0.5rem;
 }
 /* Childhood and Education */
-.top-control {
-  margin-top: 7rem;
+.childhood h1 {
+  font-size: 38.2px;
 }
 .childhood-video {
   margin: 2rem 0;
 }
 video {
   border: 0.1px solid black;
-  width: 65%;
+  /* width: 65%; */
+}
+video[poster] {
+  height: 100%;
+  width: 100%;
 }
 .video-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  width: 65%;
+  width: 100%;
   margin-top: 0.5rem;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
@@ -304,6 +310,5 @@ video {
 .hilbert::before {
   content: "";
   border: 2px solid#a5b1c2;
-  height: 10rem;
   margin-right: 1rem;
 }
