@@ -47,13 +47,14 @@ sup {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #e7e7e7;
 }
 #navbar a {
   padding: 1rem 0 1rem 1rem;
   text-decoration: none;
 }
 #navbar a:hover {
-  background-color: rgb(194, 194, 194);
+  background-color: rgb(216, 216, 216);
 }
 #navbar h1 {
   text-align: center;
@@ -178,6 +179,9 @@ img {
   background-color: #4b6584;
   height: 0.6rem;
 }
+.a-h1:hover {
+  text-decoration: none;
+}
 /* Top Questions */
 .top-questions-container {
   display: flex;
@@ -250,7 +254,8 @@ img {
 }
 /* Childhood and Education */
 .childhood h1 {
-  font-size: 38.2px;
+  font-size: 30.2px;
+  line-height: 2rem;
 }
 .childhood-video {
   margin: 2rem 0;
@@ -260,15 +265,22 @@ video {
   /* width: 65%; */
 }
 video[poster] {
-  height: 100%;
+  width: 80%;
+}
+.video-container {
+  display: flex;
+  margin-top: 2.5rem;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
+  align-items: center;
 }
 .video-message {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 100%;
+  width: 80%;
   margin-top: 0.5rem;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
@@ -277,14 +289,14 @@ video[poster] {
   margin-top: 0.5rem;
 }
 .kid-albert {
-  width: 65%;
+  width: 70%;
   margin: 2rem 0;
 }
 .albert-img {
   text-align: center;
 }
 .albert-img img {
-  width: 30%;
+  width: 40%;
   margin-bottom: 2.5rem;
 }
 .text-img {
@@ -312,4 +324,56 @@ video[poster] {
   content: "";
   border: 2px solid#a5b1c2;
   margin-right: 1rem;
+}
+.adult-img {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.adult-img img {
+  width: 40%;
+  margin-bottom: 1rem;
+}
+.adult-img i {
+  line-height: 1rem;
+  font-size: 0.8rem;
+}
+.name {
+  color: #2c2c2c;
+  font-weight: 600;
+}
+.profit-img {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profit-img img {
+  width: 55%;
+  margin-bottom: 1rem;
+}
+.profit-img i {
+  line-height: 1rem;
+  font-size: 0.8rem;
+}
+.few-message {
+  color: #575757;
+}
+.smaller {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.smaller img {
+  width: 40%;
+  margin-bottom: 1rem;
+}
+.smaller i {
+  line-height: 1rem;
+  font-size: 0.8rem;
+}
+.few-message {
+  color: #575757;
 }
