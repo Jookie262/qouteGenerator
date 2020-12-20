@@ -413,7 +413,7 @@ video[poster] {
     margin-top: 85rem;
   }
   .text-description {
-    width: 90%;
+    width: 80%;
     margin-right: 0rem;
     display: flex;
     flex-direction: column;

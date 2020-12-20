@@ -86,7 +86,6 @@ let changeClick = (number) => {
   document.getElementById("mouse" + number).style.color = "white";
   document.getElementById("answer" + number).style.display = "block";
 };
-
 let backClick = (number) => {
   document.getElementById("question" + number).style.backgroundColor =
     "rgb(221,221,221)";
