@@ -27,10 +27,9 @@ a:hover {
 sup {
   font-size: 0.9rem;
 }
+
 .all-container {
   margin-left: 14rem;
-}
-.overall {
   margin-top: 5rem;
 }
 /* Navbar */
@@ -39,9 +38,7 @@ sup {
   border-right: 5px solid rgb(95, 95, 95);
   width: 13rem;
   position: fixed;
-}
-.links {
-  top: 5rem;
+  top: 0;
   left: 0;
   overflow: auto;
   height: 100vh;
@@ -265,7 +262,7 @@ video {
   /* width: 65%; */
 }
 video[poster] {
-  width: 80%;
+  width: 100%;
 }
 .video-container {
   display: flex;
@@ -376,4 +373,51 @@ video[poster] {
 }
 .few-message {
   color: #575757;
+}
+.qoute-content {
+  border: 1px solid black;
+  padding: 1rem;
+  background-color: #68aa70;
+}
+.qoute-div {
+  padding: 2rem;
+  background-color: #718093;
+}
+.qouteText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 10rem;
+  font-size: 2rem;
+  word-spacing: 1rem;
+}
+.generateClick-btn {
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.qoute-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+@media only screen and (max-width: 1300px) {
+  .whole {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .text-description {
+    margin-top: 85rem;
+  }
+  .text-description {
+    width: 90%;
+    margin-right: 0rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
