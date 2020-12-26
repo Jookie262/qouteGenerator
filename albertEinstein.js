@@ -1,3 +1,67 @@
+// Night mode
+let stateMode = "click";
+const nightMode = document.getElementById("night-mode");
+nightMode.addEventListener("click", () => {
+  if (stateMode === "click") {
+    document.body.style.backgroundColor = "#232426";
+    document.getElementById("navbar").style.backgroundColor = "#3d3e40";
+    document.querySelectorAll("[orange]").forEach((colorOrange) => {
+      colorOrange.style.color = "#ff8800";
+    });
+    document.querySelectorAll("[lightgreen]").forEach((colorlightGreen) => {
+      colorlightGreen.style.color = "#3dff98";
+    });
+    document.querySelectorAll("[white]").forEach((colorWhite) => {
+      colorWhite.style.color = "#ffffff";
+    });
+    document.querySelectorAll("[black]").forEach((colorBlack) => {
+      colorBlack.style.color = "black";
+    });
+    document.getElementById("night-mode").style.borderColor = "white";
+    document.getElementById("night-icon").style.color = "white";
+    document.querySelector("p").style.color = "white";
+    document.querySelectorAll("i").forEach((i_Tag) => {
+      i_Tag.style.color = "white";
+    });
+    document.querySelectorAll("[icon]").forEach((icon) => {
+      icon.style.color = "#575757";
+    });
+    document.querySelectorAll("[darkBlue]").forEach((darkBlue) => {
+      darkBlue.style.color = "#4b7bec";
+    });
+    document.querySelectorAll("[whiteBorder]").forEach((border) => {
+      border.style.borderColor = "white";
+    });
+    stateMode = "not";
+  } else {
+    document.body.style.backgroundColor = "#f8fbff";
+    document.getElementById("navbar").style.backgroundColor = "#fffafa";
+    document.querySelectorAll("[orange]").forEach((colorBlack) => {
+      colorBlack.style.color = "black";
+    });
+    document.querySelectorAll("[lightgreen]").forEach((colorlightGreen) => {
+      colorlightGreen.style.color = "black";
+    });
+    document.querySelectorAll("[white]").forEach((colorWhite) => {
+      colorWhite.style.color = "black";
+    });
+
+    document.getElementById("night-mode").style.borderColor = "black";
+    document.getElementById("night-icon").style.color = "black";
+    document.querySelector("p").style.color = "black";
+    document.querySelectorAll("i").forEach((i_Tag) => {
+      i_Tag.style.color = "#575757";
+    });
+    document.querySelectorAll("a").forEach((a_Tag) => {
+      a_Tag.style.color = "#4b7bce";
+    });
+    document.querySelectorAll("[whiteBorder]").forEach((border) => {
+      border.style.borderColor = "black";
+    });
+    stateMode = "click";
+  }
+});
+// Qoute Generator
 let albertEinstein_qoutes = [
   "Few are those who see with their own eyes and feel with their own hearts.",
   "Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.",

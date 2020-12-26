@@ -6,8 +6,7 @@ body {
   font-family: "Segoe UI", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #d1d8e0;
-  /* background-color: #242329; */
+  background-color: #f8fbff;
 }
 i {
   color: #575757;
@@ -33,10 +32,25 @@ sup {
   margin-top: 5rem;
   margin-right: 2rem;
 }
+/* Night mode */
+.night-mode {
+  position: fixed;
+  top: 10rem;
+  right: 0;
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+.fa-cloud-moon {
+  font-size: 1.8rem;
+  color: #575757;
+}
+.night-mode:hover {
+  cursor: pointer;
+}
+
 /* Navbar */
 #navbar {
-  border-top: 5px solid rgb(95, 95, 95);
-  border-right: 5px solid rgb(95, 95, 95);
+  border-right: 2px solid rgb(95, 95, 95);
   width: 13rem;
   position: fixed;
   top: 0;
@@ -45,18 +59,20 @@ sup {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #e7e7e7;
+  background-color: #fffafa;
 }
 #navbar a {
-  padding: 1rem 0 1rem 1rem;
+  font-size: 15px;
+  padding: 1rem 0.5rem 1rem 1rem;
   text-decoration: none;
+  transition: 0.1s ease-out;
 }
 #navbar a:hover {
-  background-color: rgb(216, 216, 216);
+  background-color: rgb(245, 245, 245);
 }
 #navbar h1 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.37rem;
 }
 #navbar header {
   border-bottom: 2px solid rgb(95, 95, 95);
@@ -132,7 +148,7 @@ img {
   padding: 0.5rem;
 }
 .fact-color {
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(240, 240, 240);
 }
 .inside-square-div {
   display: flex;
@@ -213,14 +229,15 @@ img {
 .question {
   margin: 1rem;
   padding: 0rem 1rem;
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(240, 240, 240);
+  transition: 0.1s ease-out;
 }
 .question:hover {
   cursor: pointer;
-  background-color: rgb(202, 202, 202);
+  background-color: rgb(231, 231, 231);
 }
 .question-background {
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(240, 240, 240);
 }
 .quest-hover {
   cursor: pointer;
@@ -356,9 +373,6 @@ video[poster] {
   line-height: 1rem;
   font-size: 0.8rem;
 }
-.few-message {
-  color: #575757;
-}
 .smaller {
   text-align: center;
   display: flex;
@@ -372,9 +386,6 @@ video[poster] {
 .smaller i {
   line-height: 1rem;
   font-size: 0.8rem;
-}
-.few-message {
-  color: #575757;
 }
 .qoute-content {
   padding: 1rem;
