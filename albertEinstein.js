@@ -3,6 +3,7 @@ let stateMode = "click";
 const nightMode = document.getElementById("night-mode");
 nightMode.addEventListener("click", () => {
   if (stateMode === "click") {
+    navHover("#fff", "#4b7bec");
     document.body.style.backgroundColor = "#232426";
     document.getElementById("navbar").style.backgroundColor = "#3d3e40";
     document.querySelectorAll("[orange]").forEach((colorOrange) => {
@@ -34,6 +35,7 @@ nightMode.addEventListener("click", () => {
     });
     stateMode = "not";
   } else {
+    navHover("#4b7bec", "#4b7bec");
     document.body.style.backgroundColor = "#f8fbff";
     document.getElementById("navbar").style.backgroundColor = "#fffafa";
     document.querySelectorAll("[orange]").forEach((colorBlack) => {
@@ -61,6 +63,17 @@ nightMode.addEventListener("click", () => {
     stateMode = "click";
   }
 });
+let navHover = (firstColor, secondColor) => {
+  document.querySelectorAll("[whiteBlue]").forEach((whiteBlue) => {
+    whiteBlue.style.color = firstColor;
+    whiteBlue.addEventListener("mouseover", () => {
+      whiteBlue.style.color = secondColor;
+      whiteBlue.addEventListener("mouseout", () => {
+        whiteBlue.style.color = firstColor;
+      });
+    });
+  });
+};
 // Qoute Generator
 let albertEinstein_qoutes = [
   "Few are those who see with their own eyes and feel with their own hearts.",
