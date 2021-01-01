@@ -1,8 +1,28 @@
-// Night mode
+// Night mode Variables
 let stateMode = "click";
 const nightMode = document.getElementById("night-mode");
-nightMode.addEventListener("click", () => {
-  if (stateMode === "click") {
+
+//Check for the status the moment the site will load
+window.onload = () => {
+  if(getModeStatus() == 'lightMode'){
+    light_mode()
+  }else if(getModeStatus() == 'nightMode') {
+    night_mode()
+  }
+}
+
+//Get the mode status in the localstorage
+let getModeStatus = () => {
+  return localStorage.getItem('modeStatus')
+}
+
+//Set the mode status in the localstorage
+let setModeStatus = (status) => {
+    localStorage.setItem('modeStatus', status)
+}
+
+// Night Mode Codes
+let night_mode = () => {
     navHover("#fff", "#4b7bec");
     document.body.style.backgroundColor = "#232426";
     document.getElementById("navbar").style.backgroundColor = "#3d3e40";
@@ -34,7 +54,11 @@ nightMode.addEventListener("click", () => {
       border.style.borderColor = "white";
     });
     stateMode = "not";
-  } else {
+
+}
+
+// Light Mode Codes
+let light_mode = () => {
     navHover("#4b7bec", "#4b7bec");
     document.body.style.backgroundColor = "#f8fbff";
     document.getElementById("navbar").style.backgroundColor = "#fffafa";
@@ -61,8 +85,18 @@ nightMode.addEventListener("click", () => {
       border.style.borderColor = "black";
     });
     stateMode = "click";
+}
+
+nightMode.addEventListener("click", () => {
+  if (stateMode === "click") {
+    setModeStatus('nightMode')
+    night_mode()
+  } else {
+    setModeStatus('lightMode')
+    light_mode()
   }
 });
+
 let navHover = (firstColor, secondColor) => {
   document.querySelectorAll("[whiteBlue]").forEach((whiteBlue) => {
     whiteBlue.style.color = firstColor;
@@ -156,6 +190,7 @@ document.getElementById("question5").addEventListener("click", () => {
     state5 = "o";
   }
 });
+
 let changeClick = (number) => {
   document.getElementById("question" + number).style.backgroundColor =
     "#4b6584";
@@ -163,6 +198,7 @@ let changeClick = (number) => {
   document.getElementById("mouse" + number).style.color = "white";
   document.getElementById("answer" + number).style.display = "block";
 };
+
 let backClick = (number) => {
   document.getElementById("question" + number).style.backgroundColor =
     "rgb(221,221,221)";
